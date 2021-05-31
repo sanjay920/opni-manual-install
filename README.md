@@ -28,3 +28,11 @@ ____
 |--------------------------------|---------------------------------------------------------------------------------|
 | Install Sock Shop              | `kubectl apply -f https://raw.githubusercontent.com/sanjay920/opni-manual-install/main/sock-shop-all-in-one.yaml`    |
 | Logging config to ship to Opni | `kubectl apply -f https://raw.githubusercontent.com/sanjay920/opni-manual-install/main/setup-logging.yaml`           |
+
+____
+#### Helpful commands
+
+| Description                     | Command                                                                                                                                                                                           |                       |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| Port Forward Kibana             | `kubectl port-forward svc/opendistro-es-kibana-svc 5601:443`                                                                                                                                      | http://localhost:5601 |
+| Patch Kibana to be LoadBalancer | `kubectl patch svc opendistro-es-kibana-svc  -p '{"spec": {"ports": [{"port": 443,"targetPort": 5601,"name": "https"},{"port": 443,"targetPort": 5601,"name": "http"}],"type": "LoadBalancer"}}'` |                       |
