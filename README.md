@@ -28,6 +28,7 @@ ____
 |--------------------------------|---------------------------------------------------------------------------------|
 | Install Sock Shop              | `kubectl apply -f https://raw.githubusercontent.com/sanjay920/opni-manual-install/main/sock-shop-all-in-one.yaml`    |
 | Logging config to ship to Opni | `kubectl apply -f https://raw.githubusercontent.com/sanjay920/opni-manual-install/main/setup-logging.yaml`           |
+| Logging chart repository       | https://github.com/sanjay920/charts `opni-logging`                              |
 
 ____
 #### Helpful commands
