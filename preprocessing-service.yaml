@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: preprocessing-service
-        image: sanjayrancher/preprocessing-service:v0.0
+        image: sanjayrancher/preprocessing-service:v0.1-dev
         imagePullPolicy: Always
         env:
         - name: NATS_SERVER_URL
@@ -25,4 +25,3 @@ spec:
           value: "admin"
         - name: ES_PASSWORD
           value: "admin"
-
