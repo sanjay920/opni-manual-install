@@ -35,9 +35,7 @@ spec:
           value: "admin"
         - name: NODE_TLS_REJECT_UNAUTHORIZED
           value: "0"
-        - name: NULOG_TRAIN_IMAGE_REPO
-          value: "sanjayrancher"
         - name: NULOG_TRAIN_IMAGE_NAME
-          value: "nulog-train"
+          value: "sanjayrancher/nulog-train"
         - name: NULOG_TRAIN_IMAGE_TAG
           value: "v0.1-dev"
