@@ -29,7 +29,8 @@ spec:
           value: "mysecretkey"
         - name: MODEL_THRESHOLD
           value: "0.6"
+        - name: MIN_LOG_TOKENS
+          value: "5"
         resources:
           limits:
             nvidia.com/gpu: 1
-
